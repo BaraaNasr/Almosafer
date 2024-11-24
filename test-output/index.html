@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\96279\AppData\Local\Temp\testng-eclipse-902484183\testng-customsuite.xml</span>
+                    <span>C:\Users\96279\AppData\Local\Temp\testng-eclipse-456144108\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="AlmosaferTestClass" class="method navigator-link" hash-for-method="CheckReturnDate">CheckReturnDate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -109,12 +123,22 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="AlmosaferTestClass" class="method navigator-link" hash-for-method="CheckDepatureDate">CheckDepatureDate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="AlmosaferTestClass" class="method navigator-link" hash-for-method="CheckTheCurrencyIsSar">CheckTheCurrencyIsSar</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="AlmosaferTestClass" class="method navigator-link" hash-for-method="CheckTheEnglishLanguageIsDefault">CheckTheEnglishLanguageIsDefault</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="AlmosaferTestClass" class="method navigator-link" hash-for-method="CheckTheHotelTabIsNotSelected">CheckTheHotelTabIsNotSelected</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -134,6 +158,73 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">AlmosaferTestClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckReturnDate">
+                  </a> <!-- CheckReturnDate -->
+                  <span class="method-name">CheckReturnDate</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div[class=&apos;sc-jtHxuu sc-bYTsla hWmAgB&apos;] span[class=&apos;sc-fFTYTi gRMBNc&apos;]&quot;}
+  (Session info: chrome=131.0.6778.86)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8c5354211b906d3febdfde667c84a797, findElement {using=css selector, value=div[class=&apos;sc-jtHxuu sc-bYTsla hWmAgB&apos;] span[class=&apos;sc-fFTYTi gRMBNc&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\96279\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50728}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50728/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8c5354211b906d3febdfde667c84a797
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at AlmosaferTestClass.CheckReturnDate(AlmosaferTestClass.java:83)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -145,6 +236,13 @@
                   <a name="CheckContactNumber">
                   </a> <!-- CheckContactNumber -->
                   <span class="method-name">CheckContactNumber</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckDepatureDate">
+                  </a> <!-- CheckDepatureDate -->
+                  <span class="method-name">CheckDepatureDate</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -163,6 +261,13 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="CheckTheHotelTabIsNotSelected">
+                  </a> <!-- CheckTheHotelTabIsNotSelected -->
+                  <span class="method-name">CheckTheHotelTabIsNotSelected</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="CheckTheVisaLogoIsDisplayed">
                   </a> <!-- CheckTheVisaLogoIsDisplayed -->
                   <span class="method-name">CheckTheVisaLogoIsDisplayed</span>
@@ -173,7 +278,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\96279\AppData\Local\Temp\testng-eclipse-902484183\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\96279\AppData\Local\Temp\testng-eclipse-456144108\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -222,28 +327,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'CheckTheEnglishLanguageIsDefault')
+data.setCell(0, 1, 'CheckTheVisaLogoIsDisplayed')
 data.setCell(0, 2, 'AlmosaferTestClass')
-data.setCell(0, 3, 33);
+data.setCell(0, 3, 32);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'CheckTheCurrencyIsSar')
 data.setCell(1, 2, 'AlmosaferTestClass')
-data.setCell(1, 3, 22);
+data.setCell(1, 3, 32);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'CheckTheVisaLogoIsDisplayed')
+data.setCell(2, 1, 'CheckTheEnglishLanguageIsDefault')
 data.setCell(2, 2, 'AlmosaferTestClass')
-data.setCell(2, 3, 20);
+data.setCell(2, 3, 31);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'CheckContactNumber')
+data.setCell(3, 1, 'CheckDepatureDate')
 data.setCell(3, 2, 'AlmosaferTestClass')
-data.setCell(3, 3, 17);
+data.setCell(3, 3, 29);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'CheckContactNumber')
+data.setCell(4, 2, 'AlmosaferTestClass')
+data.setCell(4, 3, 27);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'CheckTheHotelTabIsNotSelected')
+data.setCell(5, 2, 'AlmosaferTestClass')
+data.setCell(5, 3, 25);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'CheckReturnDate')
+data.setCell(6, 2, 'AlmosaferTestClass')
+data.setCell(6, 3, 21);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 92 ms</span>
+              <span class="suite-total-time">Total running time: 197 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -276,19 +393,33 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">CheckTheEnglishLanguageIsDefault</span>
-                <span class="method-start">1581 ms</span>
+                <span class="method-start">3497 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">CheckTheCurrencyIsSar</span>
-                <span class="method-start">1617 ms</span>
+                <span class="method-start">3531 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">CheckContactNumber</span>
-                <span class="method-start">1640 ms</span>
+                <span class="method-start">3564 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">CheckTheVisaLogoIsDisplayed</span>
-                <span class="method-start">1659 ms</span>
+                <span class="method-start">3593 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CheckTheHotelTabIsNotSelected</span>
+                <span class="method-start">3627 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CheckDepatureDate</span>
+                <span class="method-start">3654 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">CheckReturnDate</span>
+                <span class="method-start">3684 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

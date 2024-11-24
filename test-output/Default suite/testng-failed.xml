@@ -6,7 +6,7 @@
       <class name="AlmosaferTestClass">
         <methods>
           <include name="MySetup"/>
-          <include name="CheckContactNumber"/>
+          <include name="CheckReturnDate"/>
         </methods>
       </class> <!-- AlmosaferTestClass -->
     </classes>

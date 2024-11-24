@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -51,7 +53,35 @@ public class AlmosaferTestClass {
 		boolean ActualResult = driver.findElement(By.cssSelector(".sc-kNBZmU.jEzChs")).isDisplayed();
 		boolean ExpectedResult = true;
 		Assert.assertEquals(ActualResult, ExpectedResult);
+	
 		
 	}
 	
+	@Test (priority=5)
+	public void CheckTheHotelTabIsNotSelected () {
+		
+		WebElement HotelTab=  driver.findElement(By.id("uncontrolled-tab-example-tab-hotels"));
+		 String ActualResult = HotelTab.getAttribute("aria-selected");
+		 String ExpectedResult = "false" ; 
+		Assert.assertEquals(ActualResult, ExpectedResult);
+	}
+	
+	@Test (priority=6)
+	public void CheckDepatureDate () {
+		
+		int Today = LocalDate.now().getDayOfMonth();
+		int Tomorrow = LocalDate.now().plusDays(1).getDayOfMonth();
+		String ActualResult = driver.findElement(By.cssSelector("div[class='sc-OxbzP sc-lnrBVv gKbptE'] span[class='sc-fvLVrH hNjEjT']")).getText();
+		String ExpectedResult = Integer.toString(Tomorrow);
+		Assert.assertEquals(ActualResult, ExpectedResult);
+	}
+	
+	@Test (priority=7)
+	public void CheckReturnDate () { 
+	int Today = LocalDate.now().getDayOfMonth();
+	int DayAfterTomorrow = LocalDate.now().plusDays(2).getDayOfMonth();
+	String ActualResult = driver.findElement(By.cssSelector("div[class='sc-jtHxuu sc-bYTsla hWmAgB'] span[class='sc-fFTYTi gRMBNc']")).getText();
+	String ExpectedResult =Integer.toString(DayAfterTomorrow);
+	Assert.assertEquals(ActualResult, ExpectedResult);
+	}
 }
