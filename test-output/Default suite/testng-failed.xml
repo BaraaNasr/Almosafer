@@ -5,8 +5,8 @@
     <classes>
       <class name="AlmosaferTestClass">
         <methods>
+          <include name="RefreshThePage"/>
           <include name="MySetup"/>
-          <include name="CheckReturnDate"/>
         </methods>
       </class> <!-- AlmosaferTestClass -->
     </classes>
