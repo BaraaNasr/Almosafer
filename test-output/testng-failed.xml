@@ -5,8 +5,8 @@
     <classes>
       <class name="AlmosaferTestClass">
         <methods>
-          <include name="RefreshThePage"/>
-          <include name="MySetup"/>
+          <include name="mySetup"/>
+          <include name="CheckTheSortOption"/>
         </methods>
       </class> <!-- AlmosaferTestClass -->
     </classes>
